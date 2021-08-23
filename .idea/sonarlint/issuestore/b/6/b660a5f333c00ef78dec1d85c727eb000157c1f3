@@ -1,0 +1,21 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÄîñ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÄîñ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÄîñ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ²áŒøÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+P
+java:S1118":Add a private constructor to hide the implicit public one.(Óµ¨œ
+<
+java:S1172"&Remove these unused method parameters.(öÄîñ
+R
+java:S1854"7Remove this useless assignment to local variable "obj".(¯´¡Óÿÿÿÿÿ
+Z
+java:S1854"?Remove this useless assignment to local variable "context_ref".(µ²áŒøÿÿÿÿ
+I
+java:S1905".Remove this unnecessary cast to "WTReference".(µ²áŒøÿÿÿÿ
+K
+java:S1481"0Remove this unused "context_ref" local variable.(µ²áŒøÿÿÿÿ
+C
+java:S1481"(Remove this unused "obj" local variable.(¯´¡Óÿÿÿÿÿ
