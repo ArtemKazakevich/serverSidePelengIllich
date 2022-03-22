@@ -1,0 +1,60 @@
+
+[	java:S112F"FDefine and throw a dedicated exception instead of using a generic one.(‰™áÍ
+C	java:S108")Either remove or fill this block of code.(ğ±‡Øúÿÿÿÿ
+H
+java:S11353"2Complete the task associated to this TODO comment.(™±ÎÒ
+
+java:S2178G"fCorrect this "&" to "&&" and extract the right operand to a variable if it should always be evaluated.(àİİåûÿÿÿÿ
+
+java:S2178G"fCorrect this "&" to "&&" and extract the right operand to a variable if it should always be evaluated.(àİİåûÿÿÿÿ
+
+java:S2178G"fCorrect this "&" to "&&" and extract the right operand to a variable if it should always be evaluated.(àİİåûÿÿÿÿ
+•
+java:S2159G"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(àİİåûÿÿÿÿ
+•
+java:S2159G"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(àİİåûÿÿÿÿ
+•
+java:S2159G"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(àİİåûÿÿÿÿ
+•
+java:S2159G"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(àİİåûÿÿÿÿ
+A
+java:S1168X"+Return an empty collection instead of null.(ÎÍëÍ
+c
+java:S1128"HRemove this unused import 'com.ptc.core.lwc.server.LWCNormalizedObject'.(™½Íøÿÿÿÿ
+I
+java:S1128"3Remove this unused import 'sun.misc.BASE64Encoder'.(ëŞï®
+D
+java:S1128".Remove this unused import 'wt.doc.WTDocument'.(Úß€½
+O
+java:S1128"4Remove this unused import 'wt.fc.PersistenceHelper'.(œà°¥ûÿÿÿÿ
+I
+java:S1128".Remove this unused import 'wt.fc.QueryResult'.(Ğ²©¥ûÿÿÿÿ
+E
+java:S1128
+"/Remove this unused import 'wt.query.QuerySpec'.(ô¢îô
+P
+java:S1128":Remove this unused import 'wt.vc.config.LatestConfigSpec'.(¯Ù¦
+?
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å
+J
+java:S1128"5Remove this unused import 'java.io.FileOutputStream'.(˜«ªg
+F
+java:S1128"0Remove this unused import 'java.io.InputStream'.(¹»º
+W
+java:S1128"ARemove this unused import 'java.io.UnsupportedEncodingException'.(Ãµ…“
+M
+java:S1128"7Remove this unused import 'java.net.HttpURLConnection'.(¬¬˜­
+F
+java:S1128"0Remove this unused import 'java.net.URLDecoder'.(œ®ô„
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+f	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰™áÍ
+f	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰™áÍ
+f	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰™áÍ
+f	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰™áÍ
+K
+java:S1191"5Use classes from the Java API instead of Sun classes.(ëŞï®
+_
+java:S2583G"DChange this condition so that it does not always evaluate to "false"(àİİåûÿÿÿÿ
+O
+java:S3516F"9Refactor this method to not always return the same value.(‰™áÍ

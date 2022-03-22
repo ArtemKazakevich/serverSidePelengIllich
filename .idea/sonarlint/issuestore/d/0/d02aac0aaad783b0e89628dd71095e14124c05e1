@@ -1,0 +1,95 @@
+
+c	java:S112é"FDefine and throw a dedicated exception instead of using a generic one.(ÿÐ‡£8ÞÞ¶ ¾/
+]	java:S125."<This block of commented-out lines of code should be removed.(½ºªÃÿÿÿÿÿ8ëÞ¶ ¾/
+[
+java:S3400@"9Remove this method and declare a constant for this value.(†‡¹ïýÿÿÿÿ8ôÞ¶ ¾/
+G
+java:S1172C"*Remove this unused method parameter "str".(¤›©ä8÷Þ¶ ¾/
+N
+java:S1874G",Remove this use of "find"; it is deprecated.(Ÿ±ðâúÿÿÿÿ8Êß¶ ¾/
+N
+java:S1874_",Remove this use of "find"; it is deprecated.(Ÿ±ðâúÿÿÿÿ8Ðß¶ ¾/
+P
+java:S1874q"3Remove this use of "appendWhere"; it is deprecated.(£¢ª8Ýß¶ ¾/
+_
+java:S3252q"BUse static access with "wt.inf.container._WTContainer" for "NAME".(£¢ª8à¶ ¾/
+N
+java:S1874r",Remove this use of "find"; it is deprecated.(Ùäáâýÿÿÿÿ8à¶ ¾/
+M
+java:S1656±"/Remove or correct this useless self-assignment.(×¾ÙÚ8Ÿà¶ ¾/
+p
+java:S3776Ã"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(£ñ§»8¡à¶ ¾/
+P
+java:S1135õ"2Complete the task associated to this TODO comment.(Å˜©8Àà¶ ¾/
+U
+java:S1135²"2Complete the task associated to this TODO comment.(ÓÍúüøÿÿÿÿ8Çà¶ ¾/
+V
+java:S1874¸"3Remove this use of "appendWhere"; it is deprecated.(åÜ“êþÿÿÿÿ8Èà¶ ¾/
+b
+java:S3252¸"?Use static access with "wt.doc._WTDocumentMaster" for "NUMBER".(åÜ“êþÿÿÿÿ8Èà¶ ¾/
+O
+java:S1874¹",Remove this use of "find"; it is deprecated.(Ùäáâýÿÿÿÿ8Éà¶ ¾/
+Š
+java:S1130é"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÿÐ‡£8Öà¶ ¾/
+Y	java:S125Í"<This block of commented-out lines of code should be removed.(þÀ‘ß8Øà¶ ¾/
+[	java:S106ë"9Replace this use of System.out or System.err by a logger.(€óž‚øÿÿÿÿ8üÇ¶ ¾/
+U	java:S106í"9Replace this use of System.out or System.err by a logger.(è«8ýÇ¶ ¾/
+V	java:S106ï"9Replace this use of System.out or System.err by a logger.(ìù¿Ü8þÇ¶ ¾/
+[	java:S106ñ"9Replace this use of System.out or System.err by a logger.(ª¸Áúÿÿÿÿ8ÿÇ¶ ¾/
+[	java:S106ó"9Replace this use of System.out or System.err by a logger.(õÓš…ûÿÿÿÿ8Üà¶ ¾/
+[	java:S106õ"9Replace this use of System.out or System.err by a logger.(Ã«£äøÿÿÿÿ8Ýà¶ ¾/
+S
+java:S1905…"0Remove this unnecessary cast to "ContentHolder".(“ýÑÉùÿÿÿÿ8ßà¶ ¾/
+_
+java:S1075‘"ARefactor your code to get this URI from a customizable parameter.(à¨‡‰8âà¶ ¾/
+U
+java:S1905“"2Remove this unnecessary cast to "ApplicationData".(ÐŠ›½ùÿÿÿÿ8ãà¶ ¾/
+V
+java:S1854´"8Remove this useless assignment to local variable "file".(©œ¿8îà¶ ¾/
+L
+java:S1481Ÿ")Remove this unused "file" local variable.(Ë»¡™øÿÿÿÿ8ïà¶ ¾/
+S
+java:S1905¤"0Remove this unnecessary cast to "ContentHolder".(“ýÑÉùÿÿÿÿ8ðà¶ ¾/
+_
+java:S1075¯"ARefactor your code to get this URI from a customizable parameter.(à¨‡‰8òà¶ ¾/
+n
+java:S1128"LRemove this unused import 'com.ptc.core.htmlcomp.util.SeedObjectsUtilities'.(€ñ¤àýÿÿÿÿ8Ú ¼ ¾/
+y
+java:S1128"\Remove this unused import 'com.ptc.windchill.uwgm.cadx.caddoc.attributes.AttributeTableRow'.(Òï›ú8Ú ¼ ¾/
+O
+java:S1128"-Remove this unused import 'wt.folder.Folder'.(¨Ãßûÿÿÿÿ8Ú ¼ ¾/
+Z
+java:S1128"8Remove this unused import 'wt.lifecycle.LifeCycleState'.(‡Ã²ûùÿÿÿÿ8Û ¼ ¾/
+@
+java:S1128"Remove this duplicated import.(™Éé¹ýÿÿÿÿ8÷à¶ ¾/
+O
+java:S1128"-Remove this unused import 'wt.queue.entries'.(£ª™Æûÿÿÿÿ8Û ¼ ¾/
+j
+java:S1128"HRemove this unused import 'com.ptc.core.lwc.server.LWCNormalizedObject'.(™½Íøÿÿÿÿ8Û ¼ ¾/
+G
+java:S1128!"*Remove this unused import 'wt.org.WTUser'.(ÌöÖÑ8Ü ¼ ¾/
+b
+java:S1128""ERemove this unused import 'wt.inf.team.StandardContainerTeamService'.(à®ø‘8Ü ¼ ¾/
+N
+java:S1128#",Remove this unused import 'wt.project.Role'.(Ã±±¹úÿÿÿÿ8Ü ¼ ¾/
+_
+java:S1128$"=Remove this unused import 'wt.inf.team.ContainerTeamManaged'.(–ÉÊµýÿÿÿÿ8Ü ¼ ¾/
+Y
+java:S1128%"<Remove this unused import 'wt.inf.team.ContainerTeamHelper'.(©šÖ8Ü ¼ ¾/
+@
+java:S1128&"Remove this duplicated import.(™Éé¹ýÿÿÿÿ8Ý ¼ ¾/
+u	java:S127±"XRefactor the code in order to not assign to this loop counter from within the loop body.(×¾ÙÚ8ùà¶ ¾/
+?
+java:S1643Š"Use a StringBuilder instead.(¡µ‡¹þÿÿÿÿ8ûà¶ ¾/
+
+java:S1488Ô"\Immediately return this expression instead of assigning it to the temporary variable "durl".(©½ˆ“þÿÿÿÿ8ýà¶ ¾/
+M
+java:S5411ü"*Use the primitive boolean expression here.(‡”É³øÿÿÿÿ8þà¶ ¾/
+h
+java:S2259Â"J"NullPointerException" will be thrown when invoking method "getAppData()".(ˆ÷ßß8ÇÍ¶ ¾/
+q
+java:S2259Ç"N"NullPointerException" will be thrown when invoking method "donwloadWTDoc2()".(Òýµøùÿÿÿÿ8óè¶ ¾/
+j
+java:S2259ì"L"NullPointerException" will be thrown when invoking method "getSubFolder()".(¤Ø¸®8ôè¶ ¾/
+q
+java:S2259¾"N"NullPointerException" will be thrown when invoking method "donwloadWTDoc2()".(ÄÄï§øÿÿÿÿ8óè¶ ¾/

@@ -1,0 +1,48 @@
+
+A
+java:S1659 "&Declare "download" on a separate line.(£Å§ìûÿÿÿÿ
+;
+java:S1075("&Remove this hard-coded path-delimiter.(Óôz
+–
+java:S1130/"{Remove the declaration of thrown exception 'java.io.FileNotFoundException', as it cannot be thrown from constructor's body.(éÑşªøÿÿÿÿ
+
+java:S1130:"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(Àóáâ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(ºÑˆúÿÿÿÿ
+c
+java:S3252Y"MUse static access with "wt.content._ContentRoleType" for "toContentRoleType".(ĞŒ¨Ò
+M	java:S106c"9Replace this use of System.out or System.err by a logger.(Çğõ"
+S	java:S106g"9Replace this use of System.out or System.err by a logger.(ï¡«ıÿÿÿÿ
+<
+java:S1075v"&Remove this hard-coded path-delimiter.(”û±†
+W	java:S899y"BDo something with the "boolean" value returned by "createNewFile".(›ÛÍñ
+M
+java:S1197|"8Move the array designator from the variable to the type.(¤ÍÅ!
+O	java:S106‚"9Replace this use of System.out or System.err by a logger.(ÕÕîÆ
+O	java:S106„"9Replace this use of System.out or System.err by a logger.(í´“¿
+O	java:S106"9Replace this use of System.out or System.err by a logger.(•İ×
+T	java:S106"9Replace this use of System.out or System.err by a logger.(§¸ÿ«úÿÿÿÿ
+T	java:S106’"9Replace this use of System.out or System.err by a logger.(ó…ƒçşÿÿÿÿ
+T	java:S106”"9Replace this use of System.out or System.err by a logger.(Şä’´øÿÿÿÿ
+T	java:S106–"9Replace this use of System.out or System.err by a logger.(Ğ‰Š‰ùÿÿÿÿ
+N	java:S106˜"9Replace this use of System.out or System.err by a logger.(ĞÃ˜S
+T	java:S106›"9Replace this use of System.out or System.err by a logger.(Øâ–›şÿÿÿÿ
+O	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(‘¨¬Æ
+N
+java:S1197¡"8Move the array designator from the variable to the type.(¤ÍÅ!
+O	java:S106§"9Replace this use of System.out or System.err by a logger.(ÕÕîÆ
+O	java:S106®"9Replace this use of System.out or System.err by a logger.(‰ä¥â
+T	java:S106°"9Replace this use of System.out or System.err by a logger.(ù“Üÿÿÿÿÿ
+T	java:S106²"9Replace this use of System.out or System.err by a logger.(“«Óêúÿÿÿÿ
+T	java:S106´"9Replace this use of System.out or System.err by a logger.(Ö–àÉûÿÿÿÿ
+O	java:S106¶"9Replace this use of System.out or System.err by a logger.(Öªæ¤
+T	java:S106¸"9Replace this use of System.out or System.err by a logger.(êêĞçüÿÿÿÿ
+N	java:S106Ä"9Replace this use of System.out or System.err by a logger.(§Ÿ¼
+T	java:S106Í"9Replace this use of System.out or System.err by a logger.(¹î’ûÿÿÿÿ
+l
+java:S1192”"PDefine a constant instead of duplicating this literal "writeObject >> " 4 times.(Şä’´øÿÿÿÿ
+k
+java:S1192´"ODefine a constant instead of duplicating this literal "readObject >> " 4 times.(Ö–àÉûÿÿÿÿ
+k	java:S117l"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú÷Ÿ•úÿÿÿÿ
+k	java:S117n"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°£Öõûÿÿÿÿ
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÅè±
+g	java:S117­"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¯ûš

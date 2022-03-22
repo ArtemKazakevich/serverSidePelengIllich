@@ -26,6 +26,8 @@ import wt.vc.config.*;
 import java.beans.PropertyVetoException;
 import java.io.*;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 import wt.org.WTUser ;
@@ -37,14 +39,15 @@ import wt.pdmlink.PDMLinkProduct;
 
 import wt.workflow.notebook.WfFolderedBookmark;
 
-
-public class ServerSide implements Serializable, RemoteAccess {
+public class TestServerSide implements Serializable, RemoteAccess {
 
  /*
     Map<WTContainer, HashSet<Role>> containersWithSelectedUser = new HashMap<WTContainer, HashSet<Role>>();
     Map.Entry<WTContainer, HashSet<Role>> entries;
         WTContainer container = entries.getKey();
         String role = container.get
+
+
 */
 
     private static List<WTContainer> containers = new ArrayList<WTContainer>();
@@ -166,29 +169,18 @@ public class ServerSide implements Serializable, RemoteAccess {
                 }
             }
 
-            Collections.sort(listSubFolders, new Comparator<WTObject>() {
-                @Override
-                public int compare(WTObject o1, WTObject o2) {
-                    return ((SubFolder) o1).getName().compareTo(((SubFolder) o2).getName());
-                }
-            });
-
             for (int i = 0; i<listSubFolders.size(); i++) {
-                if (((SubFolder) listSubFolders.get(i)).getName().contains(folderName)) {
+                if (((SubFolder) listSubFolders.get(i)).getName().contains(folderName))
+                {
 
-                    System.out.println("***-/-***");
-                    System.out.println(((SubFolder) listSubFolders.get(i)).getName());
-                    System.out.println("***-/-***");
+                    if (folderName.length() == 14 && ((SubFolder) listSubFolders.get(i)).getName().length() == 17 && ((SubFolder) listSubFolders.get(i)).getName().charAt(14) == '-') i=i;
 
-                    if (folderName.length() == 14 && ((SubFolder) listSubFolders.get(i)).getName().length() == 17 && ((SubFolder) listSubFolders.get(i)).getName().charAt(14) == '-') {
-                        i=i;
-                    } else {
-                        sub = (SubFolder) listSubFolders.get(i);
-                        break;
-                    }
+                    else sub = (SubFolder) listSubFolders.get(i);
+
 
                 }
             }
+
 
         } catch (WTException e) {
             e.printStackTrace();
@@ -200,9 +192,16 @@ public class ServerSide implements Serializable, RemoteAccess {
     // 4. Getting the complete files list
 
     public static List<String> getFinalFilesList (SubFolder subF) {
+        DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        dateFormat.setTimeZone(TimeZone.getTimeZone("GMT+3"));
+
+        Date today = new Date();
+        Calendar cal = new GregorianCalendar();
+
         List<WTObject> listWTDoc = new ArrayList<WTObject>();
         List<WTObject> listRefs = new ArrayList<WTObject>();
         List<String> filesNames = new ArrayList<String>();
+
         try {
             QueryResult results = FolderHelper.service.findFolderContents(subF);
 
@@ -220,14 +219,76 @@ public class ServerSide implements Serializable, RemoteAccess {
                 listWTDoc.add((WTDocument)((WfFolderedBookmark) listRefs.get(i)).getObject()); //instead of refcheck
             }
 
+            //находим название файлов и их статус
+            Map<String, Boolean> files = new HashMap<String, Boolean>();
             for (int i = 0; i<listWTDoc.size(); i++) {
-                filesNames.add(((WTDocument) listWTDoc.get(i)).getNumber() + "%" + ((WTDocument) listWTDoc.get(i)).getState());
+
+                // отнимает 90 дней от сегодняшнего дня
+                cal.setTime(today);
+                cal.add(Calendar.DAY_OF_MONTH, -90);
+                Date minus90Days = cal.getTime();
+
+                Date lastFileChange = (listWTDoc.get(i)).getModifyTimestamp();
+
+                boolean checkDate = lastFileChange.before(minus90Days); // проверяет, была ли дата lastFileChange раньше той, которую мы передаем в качестве аргумента
+
+                files.put(((WTDocument) listWTDoc.get(i)).getNumber() + "%" + ((WTDocument) listWTDoc.get(i)).getState(), checkDate);
             }
 
+            // сортируем по ключу, по убыванию
+            Map<String, Boolean> newMapFiles = new TreeMap<String, Boolean>(Collections.reverseOrder());
+            newMapFiles.putAll(files);
+
+            // отсеиваем файлы, если истекло 90 дней, и выводим последнюю версию
+            // если 90 дней не истекло, выводим последнюю и предыдущую
+            // TODO: возможно нужно будет доработать вывод только 2 файлов(последняя версия и предудущая), если будет больше файлов
+            for(Map.Entry<String, Boolean> item : newMapFiles.entrySet()){
+                if (filesNames.isEmpty()) {
+                    filesNames.add(item.getKey());
+                    continue;
+                }
+
+                if (item.getValue()) {
+                    int count = 0;
+
+                    // получаем номер файла (например: 7616.00.00.000_7616.40.04.100_DD7)
+                    int a = item.getKey().lastIndexOf("_");
+                    String valueMap = item.getKey().substring(0, a);
+
+                    // получаем версию файла ( например: BIN)
+                    int x = item.getKey().lastIndexOf("%");
+                    int y = item.getKey().lastIndexOf(".");
+                    String typeFileMap = item.getKey().substring(y+1, x);
+
+
+                    for (int i = 0; i < filesNames.size(); i++) {
+
+                        // получаем номер файла (например: 7616.00.00.000_7616.40.04.100_DD7)
+                        int b = filesNames.get(i).lastIndexOf("_");
+                        String valueList = filesNames.get(i).substring(0, b);
+
+                        // получаем версию файла ( например: BIN)
+                        int n = filesNames.get(i).lastIndexOf("%");
+                        int m = filesNames.get(i).lastIndexOf(".");
+                        String typeFileList = filesNames.get(i).substring(m+1, n);
+
+                        if (valueMap.equals(valueList) && typeFileMap.equals(typeFileList)) {
+                            count++;
+                        }
+                    }
+
+                    if (count == 0) {
+                        filesNames.add(item.getKey());
+                    }
+                } else {
+                    filesNames.add(item.getKey());
+                }
+            }
 
         } catch (WTException e){
             e.printStackTrace();
         }
+
         return filesNames;
     }
 
@@ -261,6 +322,8 @@ public class ServerSide implements Serializable, RemoteAccess {
         } catch (WTException var5) {
             var5.printStackTrace();
         }
+
+
 
         return document;
     }

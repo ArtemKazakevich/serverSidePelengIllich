@@ -1,26 +1,53 @@
 
-W
-java:S1128"<Remove this unused import 'wt.inf.container.WTContainerRef'.(ÀïÁÒûÿÿÿÿ
-O
-java:S1128"9Remove this unused import 'wt.inf.container.WTContainer'.(ç¥²”
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(î¯Ÿ¬
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(õ™ýÜùÿÿÿÿ
+V	java:S1250"<This block of commented-out lines of code should be removed.(øå†Áýÿÿÿÿ
+`
+java:S1128"DRemove this unused import 'com.ptc.core.meta.common.TypeIdentifier'.(ÄÑðX8ÐÉÓº·/
+l
+java:S1128"JRemove this unused import 'com.ptc.core.meta.common.TypeIdentifierHelper'.(½óÁ²úÿÿÿÿ8ÐÉÓº·/
 M
 java:S1128"7Remove this unused import 'wt.content.ApplicationData'.(Â¯‡
 P
 java:S1128"5Remove this unused import 'wt.content.ContentHelper'.(Žê‚îýÿÿÿÿ
+K
+java:S1128"5Remove this unused import 'wt.content.ContentHolder'.(ÌŒžë
 L
 java:S1128"7Remove this unused import 'wt.content.ContentRoleType'.(—ôœ-
 K
-java:S1128"5Remove this unused import 'wt.content.ContentHolder'.(ÌŒžë
+java:S1128	".Remove this unused import 'wt.doc.WTDocument'.(Úß€½8ÐÉÓº·/
+V
+java:S1128
+"4Remove this unused import 'wt.fc.PersistenceHelper'.(œà°¥ûÿÿÿÿ8ÑÉÓº·/
+P
+java:S1128".Remove this unused import 'wt.fc.QueryResult'.(Ð²©¥ûÿÿÿÿ8ÑÉÓº·/
 V
 java:S1128";Remove this unused import 'wt.inf.container.ContainerSpec'.(ò€ÃÙÿÿÿÿÿ
-J
-java:S1128"5Remove this unused import 'wt.query.SearchCondition'.(²Û™
-X
-java:S1128"=Remove this unused import 'java.beans.PropertyVetoException'.(ƒÂ¡îùÿÿÿÿ
+O
+java:S1128"9Remove this unused import 'wt.inf.container.WTContainer'.(ç¥²”
 U
 java:S1128"?Remove this unused import 'wt.inf.container.WTContainerHelper'.(‡–´¶
+W
+java:S1128"<Remove this unused import 'wt.inf.container.WTContainerRef'.(ÀïÁÒûÿÿÿÿ
+N
+java:S1128"1Remove this unused import 'wt.pds.StatementSpec'.(øøÍ¤8ÑÉÓº·/
+L
+java:S1128"/Remove this unused import 'wt.query.QuerySpec'.(ô¢îô8ÑÉÓº·/
+J
+java:S1128"5Remove this unused import 'wt.query.SearchCondition'.(²Û™
+[
+java:S1128">Remove this unused import 'wt.type.TypedUtilityServiceHelper'.(­—ŸŒ8ÒÉÓº·/
 F
 java:S1128"0Remove this unused import 'wt.util.WTException'.(£‚•¨
-N	java:S106%"9Replace this use of System.out or System.err by a logger.(î¯Ÿ¬
-S	java:S106&"9Replace this use of System.out or System.err by a logger.(õ™ýÜùÿÿÿÿ
-V	java:S1250"<This block of commented-out lines of code should be removed.(øå†Áýÿÿÿÿ
+@
+java:S1128"$Remove this unused import 'java.io'.(¬›ãD8ÒÉÓº·/
+j
+java:S1128"HRemove this unused import 'com.ptc.core.lwc.server.LWCNormalizedObject'.(™½Íøÿÿÿÿ8ÒÉÓº·/
+K
+java:S1128")Remove this unused import 'wt.vc.config'.(ù»ŒÅþÿÿÿÿ8ÒÉÓº·/
+X
+java:S1128"=Remove this unused import 'java.beans.PropertyVetoException'.(ƒÂ¡îùÿÿÿÿ
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÒÉÓº·/
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÓÉÓº·/
